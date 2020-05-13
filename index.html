@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="Resources/css/Dice.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="Resources/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <title>Pig Game</title>
+</head>
+
+<body>
+    <div class="main clearfix">
+        <div class="player-1-panel active">
+            <div class="player-name p-name-1" id="name-1">Player 1</div>
+            <div class="player-score" id="score-1">0</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-1">0</div>
+            </div>
+        </div>
+        <div class="player-2-panel">
+            <div class="player-name" id="name-2">Player 2</div>
+            <div class="player-score" id="score-2">0</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-2">0</div>
+            </div>
+        </div>
+        <button class="btn-help"><i class="ion-ios-help-outline"></i>Help</button>
+        <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+        <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+        <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+        <img src="Resources/img/dice-1.png" alt="dice" class="dice" id="dice">
+    </div>
+    <div class="help">
+        <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
+        <p>• If the player rolls a 1, they score nothing and it becomes the next player's turn.</p>
+        <p>• If the player rolls any other number, it is added to their turn total and the player's turn continues.</p>
+        <p>• If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's
+            turn.</p>
+        <p>The first player to score 100 or more points wins.</p>
+        <button class="btn-back"><i class="ion-ios-arrow-thin-left"></i>Back to game</button>
+    </div>
+    <script src="Resources/script/Dice.js"></script>
+</body>
+
+</html>
