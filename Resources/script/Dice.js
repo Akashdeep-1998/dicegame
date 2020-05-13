@@ -81,9 +81,9 @@ function btn_help()
     document.querySelector('.help').style.display='inline-block';
 }
 function btn_back()
-{
-    document.querySelector('.main').style.display='initial';
+{    
     document.querySelector('.help').style.display='none';
+    document.querySelector('.main').style.display='initial';
 }
 document.querySelector('.btn-help').addEventListener('click', btn_help);
 document.querySelector('.btn-back').addEventListener('click', btn_back)
